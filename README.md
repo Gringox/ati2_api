@@ -13,6 +13,7 @@ RUN
 npm install
 npm install -g knex
 knex migrate:latest
+npm start
 ```
 
 Try GET users/1
