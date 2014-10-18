@@ -5,7 +5,7 @@ NEEDED
 ======
 node.js, npm, postgresql
 
-A database named ati2 with password ati2 must be setup.
+A database named ati2 with user and password 'ati2' must be setup.
 
 RUN
 ===
