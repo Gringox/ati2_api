@@ -1,0 +1,23 @@
+{
+  "/users": { 
+    "get": "user#readAll",
+    "post": "user#create",
+    "options": "user#options"
+  },
+  "/users/:id": { 
+    "get": "user#read",
+    "delete": "user#delete",
+    "put": "user#update" 
+  },
+
+  "/packages": { 
+    "get": "package#readAll",
+    "post": "package#create",
+    "options": "package#options"
+  },
+  "/packages/:id": { 
+    "get": "package#read",
+    "delete": "package#delete",
+    "put": "package#update" 
+  }
+}
