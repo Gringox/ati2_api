@@ -16,7 +16,7 @@ knex migrate:latest
 npm start
 ```
 
-Note: there's a insert.sql in the seeds folder with some data you can copy/paste
+Note: there's a inserts.sql in the seeds folder with some data you can copy/paste
 
 Try GET users/1
 
