@@ -5,7 +5,10 @@
     "options": "user#options"
   },
   "/users/:id": { 
-    "get": "user#read",
+    "get": {
+      "middleware": "login#validate",
+      "handler": "user#read"
+    },
     "delete": "user#delete",
     "put": "user#update" 
   },
@@ -19,5 +22,13 @@
     "get": "package#read",
     "delete": "package#delete",
     "put": "package#update" 
+  },
+
+  "/login": {
+    "post": "login#create",
+    "options": "login#options"
+  },
+  "/login/:login_token": {
+    "delete": "login#delete"
   }
 }
